@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+body{
+    width: 100%;
+}
+.background{
+    background-image: url(pattern-bg.png);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    position: absolute;
+}
+.main input{
+    display: none;
+}
+.main h3{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.main h4{
+    border: none solid white;
+    background-color: white;
+    padding: 8px;
+    width: 244px;
+    margin-left: 30px;
+    border-radius: 10px 0px 0px 10px;
+}
+.main p{
+    margin-left: 25px;
+}
+.arrow{
+    position: relative;
+    background-image: url(icon-arrow.svg);
+    width: 11px;
+    background-repeat: no-repeat;
+    height: 14px;
+    top: -2px;
+    margin-left: 5px;
+}
+.main .container{
+    position: absolute;
+    background-color: black;
+    border: none solid black;
+    padding: 13.5px;
+    width: 20px;
+    margin-left: 290px;
+    margin-top: -41px;
+    border-radius: 0 10px 10px 0;
+}
+.body-text{
+    margin-top: 20px;
+    background-color: rgb(226, 222, 222);
+    border: 1px solid black;
+    margin-left: 30px;
+    padding: 20px;
+    width: 268px;
+    height: 280px;
+    border-radius: 10px;
+    position: absolute;
+}
+.body-text p{
+    text-align: center;
+    font-size: 16px;
+    opacity: .7;
+}
+.body-text h3{
+    text-align: center;
+}
+.map{
+    background-image: url();
+}
+.location{
+    background-image: url(icon-location.svg);
+    width: 46px;
+    height: 56px;
+    margin-top: 410px;
+    margin-left: 168px;
+}
+.map{
+    background-image: url(map.jpeg);
+    background-size: cover;
+    margin-top: 198px;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+}
+
+@media (min-width: 900px){
+    body{
+        width: 100%;
+    }
+    .main h3{
+        font-size: 30px;
+    }
+    .main h4{
+        display: none;
+    }
+    .main input{
+        display: block;
+        margin-left: 420px;
+        padding: 12px;
+        border-radius: 10px 0 0px 10px;
+        border: none;
+        width: 450px;
+    }
+    .container{
+        position: relative;
+        left: 604px;
+        top: 126px;
+    }
+    .arrow{
+        margin-top: 5px;
+    }
+    .body-text{
+        height: 100px;
+        padding: 20px;
+        width: 1125px;
+        margin-top: 120px;
+        margin-left: 90px;
+    }
+    .text{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .location{
+        margin-left: 660px;
+        margin-top: 360px;
+    }
+    .map{
+        background-image: url(map.jpeg);
+        background-size: cover;
+        margin-top: 178px;
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        z-index: -1;
+    }
+}
